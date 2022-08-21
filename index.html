@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chatbook</title>
+    <script src="https://kit.fontawesome.com/504f9637fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="/images/logo img.jpeg" class="logo" alt="logo" >
+            <ul>
+            <li><img src="/images/1bell icon.jpeg" alt="bell icon"></li>
+            <li><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhAVFRUVFRUXFRUVFRcXFRcVFxUWFhUVFRUYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHx4tMC0tLS8vKy4tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0vLS0tLS0tLS0rLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIHBAUGA//EADoQAAIBAgMEBggFAwUAAAAAAAABAgMRBAUxEiFRYQYTQXGBkSIyQlJyobHBBzNikvAjotFDU1SC8f/EABsBAQEAAwEBAQAAAAAAAAAAAAEAAgUGBAMH/8QAMhEAAgECAgcHBAIDAQAAAAAAAAECAxEEIQUSMUFRcaFhgZGxwdHwFSIy4UKiEzPiFP/aAAwDAQACEQMRAD8A+CRWyXB2B+eXAAEACFIitkAIgAVEQS4kbK2QENwABABAESDYAIgEC6AxRGACAAASCRk2YgLDcAAQKAAMiAATEFSCQbAQ2QAQABUgFEBGUQAAIgULcYgOwoAEACGTQEQACQACIgisNkAWAAIAFSIRFAAGRCpEAmJWyAETYAMrcQuSRjYrYbISQtgACAKiEYMUCgCAIEZaANiXABWK4AAgVIrZjcANwABAFSCQbAbBsgAgUAAZEAAmIAFiIAAiAAIgVoWsYhtHYUHf5X0RxVWz2Ori/an9o6/I9TgugVCP5s5VHy9BfK7+Z5auNoU8nK77M/11PdR0ZiauajZcXl029DW5DcmFyDC0/Uw0N3bJbT85XZ2FOhCPqwiu5JHklpaH8YN96XubCOgJtfdUS5Jv1RozeLm9tlcEfCrhKcvWpwl3xT+qMfqy3w6/oyegHuq/1/6NIA29jejGEqetQivhvD5RaR5/H/h/HWjWcf0zV1+6NreTPvT0nRltvHn+jy1dC4iGcbS6PwfueBB2ma5FiMP+ZSez763x/ctPGx1Z74TU1eLujV1KcqctWaafB5AAGRgAgCIrZACIAFSIkrgDdzKBmYgBIrmCQSK2YspIWAAIAysYo9F0U6NyxMtud40Yve+2T4R+7PlVqxpxcpuyR9qFGdWahBXbOFkeRVcTK0FaK3SnL1Vy5vkjY2S9GqGGs1Han/uS1/6rSPhv5nbYahCnFQhFRjFWSWiPuaDE46dbJZR4e/yx1uD0bSw6Un90uPst3PawRsNkPEbEGQBEACNkQbIkEjIiMXFWtbceUz3oZSq3nRtSnw9iXh7PevI9aD6Uqs6UtaDsfKvQp146lRXXly4Gj8wwNSjN06sHGS7H2rin2rmfBI3Jm+U08RDYqR09VrWL4p/Y1VneVVMNUdOoucZLSUeK/wAdhv8ACY1V1Z5S4e3zLlmcnj9Gywr1lnHjw7H6PY+ZwGQA9xrAAEgbFIIrYbIRNlABCEGyAguAAIACwAnkdn0dyiWKrKCuo6zl7qWvi9F3m3sLh404KEIqMYqyS4HR9Csr6nDJtenUtKXHZ9iPk798mejOdx+I/wAtTVWyPnvfzcdjovBqhRUn+Us32cF79vJAjKDwmzMTIAiABGyIoIikQABEDFsyJYiIkdX0gyiGJpOm9zW+EuD/AMPRnbAyjJxalF2aMZwjOLjJXT2mi8RQlCUoTVpRbUk+xo+Z7j8R8rs44mK19Gp8SXoS8k14I8PY6mhWVWmprf57zhsXhnh6rpvO2ztW75xBWyA+x5gACIoAAyIABMQVbgiNhtHYGzmZPhOur0qXZOUU/hvv+VzhnougVK+Ng/dU3/bJfc+daepTlJbk/I++GgqlaEHsbS7r5m1Q2Gz41qqjGU3pFOT7krs5M7xsmIxEYLanNRjxk0l5sxw2Mp1L9XUhO2uzJSt32e41BnGaVMRUdSo/hjfco9kV/N5xcPXnTkpwk4yi7prVG4WiXq5zs+WRz0tPJT+2F48b5+FvBG8wdX0ezDr6EKtrNpqXC8W4u3K6udm2amUXGTi9qN/CanFSjseYbOPicRCC2qk4wXGUlFebGJrqEJ1JaQjKT7krv6GnM0zGpiKjqVJXb0XYl2RiuxHqwmEeIbzskeHH49YVLK8nu9Wbiw+Lp1Py6kJ212ZKVu+z3HKNG4TFTpTVSnJxlHRr+b1yNw5Jj+voU61rOUd64STcZW5XTMsXgnQtJO6fmYaP0isVeLjqtZ8189DsSXI2cbHYlU6c6jV1CMnbjZXseJK5sm0ldmeKxUKavOcYLjKSivmTD4qnUV4TjJLXZkpW77Gmsyx1SvUdSrK8n5JdkYrsRhgcZUozVSnJxktGvo+K5G3+kvVzn93LL52nP/Xlr/6/t55248O7qbxBwsqxirUYVUrbaTa4P2l4O5y2zUNNNp7joIyUkmtjOs6Q4PrsNVp23uLcfij6UfmjTjZvZI0biKezOUeDa8nY3OipZTjws/nQ53T1Ozpz43Xk15s+YANuc8AVbjEETRkACMiERWCMSMoAkD0n4f1LYuC95SX9l/sebOwyHGdViKVR6Rkrv9L9GXybPjXi505RW9PyPRhKip14TexNeZuY+WJoKcJQek1JPukmn9T7g5Q7xrczR+Pwc6NSVKorSi7Pnwa4pnHjFtpJXb3JLe2+xJG6cyyqjXSVWlGVtHvTXc1vR8MuyDDUHtUqMVLi25Ndzk3bwN2tKx1c4vW7rfO45qWgp69ozWr338Nj8VyMejGAdDDU6cvWs5SXByk5W8L28DtrGQNNObnJye1nRU4KnFQjsSt4HGxuH26c6d7bUJRvw2k1f5mlsZhZ0pyp1I7MouzX87OZvI67McooV7ddSjJrR71JctpWduR68Fi1QbUldM1+kcB/6oxcXaUeOz58saahByajFNtuyS3tt6JI3B0cwLoYanSfrRi3L4pNya8HK3gXL8hw1B7VKioy95tyku5yba8Ds0jLG43/ADpRirJZ9tzDRujXhm5zd5PLLYl5u+W4JHFzLDdbSnTvbbi0nwbW5+ZzAeFNp3RtWk1Zmi8TQlTk4Ti4yi7NPVMlGlKclGKcpSdklq2+xG48xyahXX9alGTXbvUu7ajZ25GOX5Jh6G+lRUX72+T8HJto3X1aOrfVet09+6xzf0GevbXWr/bw2X7b9xnkmC6mhTpPWMVe2l3dyt4tnYJFBpZScm2950cYqMVFbEDRuMqbU5S95t+bbNxZ3iuqoVanuwdvie6PzaNLm40TF2nLkvX2Of09Uzpw5vyS9QLFtYjZt9pz2wjKAIFAAGRiUATEAJF0C42IABA250SzLr8NBt+nH0J8bx0firPzO8NZfhzi9nEunfdUi936o+kn5X8zZjZzGNoqlWaWx5rvO20diHXw8ZPasn3e6s+8NkSCRkeU9wABEAYtlREUAEQAMWyINlQSKRAA4GbZjHD0pVZ6LRdspPSKGMXJpLNsxlJRTlJ2SPKfiRmdoww8Xvfpz7l6q8Xd+CPAnIzDFzq1JVZu8pu75cEuSW7wOOdRhqKo0lDx57/Y4jG4h4itKpu3ct3v3gAHoPIAC6AQ8V5lFwGZnkYhBF0ExQ0IAQAACR6HoHSbxtOS9mNST7nBr6tG1Ujxn4d5S4QlXmrOa2Y/CndvubS/ae1Oc0jUU6ztuy9+rOx0RRdLDK6s5O/jZLokADjxxEXJwU05R9aKaclfS61R4TZnIMWw2EiIJGQBEAARGLZUgkUiAB0Ge9J6OGTi3t1OyCfb+p+z9eRnCnKo9WCuzCpUhSjrzdkdpj8bTowdSpJRivNvsSXa+RqvpFns8VU2nuhG6hDguL5vifDOM3qYme3Ulp6sFe0V2pL7nWG9weCVH7pZy8vnHwOV0jpN1/shlHz58OxePBVsAGxNQAAmBIuhACJsoAIyIDCVRJpb95mSdwaatfeAAhAI9T0Y6O0p2qYirSUNVTU43l32e5cte48uyHyqRlOLUZavafejUhTlrThr9l7Lyd+RueWaYaCt19JJKySnHcuxKKZ0+P6b4WC/pt1HyTjHxk19EzWAPDDRVJbW30NpU07Wa+yKj19j0mZ9NMTVuoNUlwjr4ye/ysefpV5RltxlKMlvum1K/ej52B76dKFNasFZfPE1VbEVastapJt/NnDuPW5X06rwsq0VVXH1Zea3Py8T1OB6YYSp/qOD4TVvmrr5mqQeWro+hPNLVfZ7bD3UNL4mnk3rLt99vmbww2JhNXhOM1xjJS+hyDQ6dt6ObSzOvHSvNLlNr7njlorhPp+zYQ08v5U/B/pG6iml3nuK/wCTU/e/8nwrZhVl61WUvik39WC0TLfNeBm9PU91N+K/ZuPFZjRp/mVYR5Skk/Bas8/junWGhup3qvkrR8W9/wAjWVinop6KpL8m30/fU8dTTtaX4RUer9F0PQ5t0wxNa8U+qg/Zhub756+VjzyAPfClCCtFWRqatepVlrVJOT7fmXcQoB9D5AAoEQACQABEUAAZHFrP0489nhxfj2nJONXl6cedr7+DfZffqckwh+UufofSr+MOXqwkV8CX4AzPkAAIAqQSIwFFbIAIAAIhQSDZWyAVwABAFW4liMNo7CgAQABdAEaEAIAAEJBIrI2AFlABCcatL0422b9m+V9+u6P34HIPhiZ+nFc182rX8vPZ8fufODvKXP0R9KqtGHL1YAB9T4gqRARFkyAEQAKkRJXIACIAAiBbWIAG5GUAQAAaIggARAAEQRWyXAWG4AAgUAAZHHrzalBb7N8VZ6fzxPufGrTblFrRa79/lp/6z7GMb60r8fRGdRrVhbg7+LBUiIrZkfMjAAgAAkDZJBFbDZCFsAAQBWgjFgJQAIAAARSAEVwAVISMSmTZiCFgACAKkRIrYCZ7K4kMShYyuCIoFgZdhgUEhZAAIFiZPT+cyAx3ithiADIAWGqKAZGJQCQkAAgWAnqUGK2juMQAZADOGj/nYQAxRiACAAASM46eZiACFlAAAf/Z" alt="msg icon"></li>
+            <li><img src="/images/video icon.png" alt="msg icon"></li>
+            </ul>
+            
+        </div>
+
+        <div class="nav-right">
+            <div class="searchbox">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online">
+                <img src="/images/profile img.jpeg" alt="profile img">
+            </div>
+        
+        </div>
+    </nav>
+
+        <div class="container">
+            <!--------------------------left-sidebar-------------->
+            <div class="left-sidebar">
+                <div class="imp-links">
+                    <a href="#"><img src="images/news icon.png" >Latest News</a>
+                    <a href="#"><img src="images/frnd icon.png" >Friends</a>
+                    <a href="#"><img src="images/group.jpg" >Group</a>
+                    <a href="#"><img src="images/market.png" >Marketplace</a>
+                    <a href="#"><img src="images/watch.png" >Watch</a>
+                    <a href="#">See more</a>
+                </div>
+
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="#"><img src="images/web design.jpeg">Web design Course</a>
+                    <a href="#"><img src="images/devs.jpeg">Web Developers</a>
+                    <a href="#"><img src="images/full stack.jpeg">Full Stack Developer</a>
+                    <a href="#"><img src="images/web experts.jpeg">Web Experts</a>
+                </div>
+            </div>
+
+            <!---------------------main content------------------------------->
+            <div class="main-content">
+                <div class="story-gallery">
+                    <div class="story story-0">
+                        <img src="images/plus img.jpeg">
+                        <p>Post Story</p>
+                    </div>
+
+                    <div class="story story-1">
+                        <img src="images/story 1.jpeg">
+                        <p>David</p>
+                    </div>
+
+                    <div class="story story-2">
+                        <img src="images/profile pic1.jpeg">
+                        <p>Alisha </p>
+                    </div>
+
+                    <div class="story story-3">
+                        <img src="images/profile pic2.jpeg">
+                        <p>Xiaobao</p>
+                    </div>
+
+                    <div class="story story-4">
+                        <img src="images/profilepic3.jpeg">
+                        <p>Elena</p>
+                    </div>
+                </div>
+
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile img.jpeg">
+                <div> 
+                    <p> Kate Albert </p>
+                    <small>Public <i class="fa-solid fa-caret-down"></i></small> 
+                </div>
+            </div>
+
+            <div class="post-content">
+                <textarea rows="3" placeholder="What's on your mind Kate?"></textarea>
+                <div class="post-links">
+                    <a href="#"><img src="images/live video.png"> <span class="desktop-only">Live Video</span></a>
+                    <a href="#"><img src="images/photo icon.jpeg"><span class="desktop-only">Photo/Video</span></a>
+                    <a href="#"><img src="images/feeling.png"><span class="desktop-only">feeling/Activity</span></a>
+                </div>
+            </div>
+
+
+            </div>
+
+                <div class="post-container-1">
+                    <div class="user-profile">
+                        <img src="images/profile img.jpeg">
+                    <div> 
+                        <p> Kate Albert </p>
+                        <span>17 June 2022, 10:56 AM</span> 
+                    </div>
+                    </div>
+
+                    <p class="Post-text"> “When you have a dream, you've got to grab it and never let go.” </p>
+                    <img src="images/post img1.jpg" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <img src="images/blue like btn.png">120
+                            <img src="images/coment.png">50
+                            <img src="images/share icon.png">25
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container-1">
+                    <div class="user-profile">
+                        <img src="images/profile img.jpeg">
+                    <div> 
+                        <p> Kate Albert </p>
+                        <span>15 May 2022, 4:30 PM</span> 
+                    </div>
+                    </div>
+
+                    <p class="Post-text"> “Just watching my cats can make me happy.” </p>
+                    <img src="images/post img2.jpg" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <img src="images/blue like btn.png">100
+                            <img src="images/coment.png">30
+                            <img src="images/share icon.png">15
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container-1">
+                    <div class="user-profile">
+                        <img src="images/profile img.jpeg">
+                    <div> 
+                        <p> Kate Albert </p>
+                        <span>15 May 2022, 4:30 PM</span> 
+                    </div>
+                    </div>
+
+                    <p class="Post-text"> Siberian huskies are friendly and intelligent but somewhat independent and stubborn. They thrive on human company, but need firm, gentle training from puppyhood. Particularly in warm weather, Siberian huskies can be diggers because they like to create cool places to lie. </p>
+                    <img src="images/post img3.jpg" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <img src="images/blue like btn.png">100
+                            <img src="images/coment.png">30
+                            <img src="images/share icon.png">15
+                        </div>
+                    </div>
+                </div>
+            
+
+            
+
+            </div>
+
+            <!----------------------right-sidebar----------------------------->
+            <div class="right-sidebar">
+
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>18</h3>
+                        <span>March</span>
+                    </div>
+
+                    <div class="right-event">
+                        <h4>Social Media</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Grand plaza Gurgaon</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+
+                    <div class="event">
+                        <div class="left-event">
+                            <h3>22</h3>
+                            <span>June</span>
+                        </div>
+    
+                        <div class="right-event">
+                            <h4>Marketing Campaign</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Grand plaza Gurgaon</p>
+                            <a href="#">More Info</a>
+                        </div>
+                    </div>
+
+                 <div class="sidebar-title">
+                        <h4>Advertisement</h4>
+                        <a href="#">Close</a>
+                 </div>
+                 <img src="images/advertisement.png" class="sidebar-ads">
+                    
+                 <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>   
+                
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/profile pic1.jpeg">
+                    </div>
+                    <p>Alisha Rose</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/profile pic2.jpeg">
+                    </div>
+                    <p>Xiaobao chan</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/profilepic3.jpeg">
+                    </div>
+                    <p>Elena Gilbert</p>
+                </div>
+
+
+
+
+               
+            
+
+
+
+
+            </div>
+        </div>
+</body>
+</html>
